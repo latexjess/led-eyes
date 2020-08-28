@@ -1,8 +1,6 @@
 # LED-Eyes
 Arduino based ring-light controller suitable for masks
 
----
-
 ## Installation
 
 1. Download latest .ino file
