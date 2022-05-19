@@ -2,13 +2,16 @@
 //by Dano Wall and Becky Stern for Adafruit Industries
 #include <Adafruit_NeoPixel.h>
 
-// PIN defs
-#define PIN           1
+// PIN defs (change this!)
+#define PIN           6
 
 // LED defs
 #define TOTAL_LEDS   32
 #define HALF_LEDS    16
 #define QUARTER_LEDS  8
+
+// Number of LEDS in your model (change this!)
+#define NUM_LEDS     32
 
 // Brightness defs
 #define DIM          50
@@ -28,15 +31,25 @@
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_LEDS, PIN, NEO_GRB);
 
 // Color defs
-uint32_t c1 = strip.Color(255, 0, 255);   // Change RGB color value here
-uint32_t c2 = strip.Color(255, 0, 0);     // Change RGB color value here
-uint32_t c3 = strip.Color(255, 134, 0);   // Change RGB color value here
-uint32_t c4 = strip.Color(255, 255, 0);   // Change RGB color value here
-uint32_t c5 = strip.Color(0, 255, 0);     // Change RGB color value here
-uint32_t c6 = strip.Color(0, 195, 219);   // Change RGB color value here
-uint32_t c7 = strip.Color(0, 0, 255);     // Change RGB color value here
-uint32_t c8 = strip.Color(110, 0, 110);   // Change RGB color value here
-uint32_t black = strip.Color(0, 0, 0);    // Change RGB color value here
+uint32_t pink = strip.Color(255, 0, 255);   // PINK
+uint32_t red = strip.Color(255, 0, 0);      // RED
+uint32_t orange = strip.Color(255, 134, 0); // ORANGE
+uint32_t yellow = strip.Color(255, 255, 0); // YELLOW
+uint32_t green = strip.Color(0, 255, 0);    // GREEN
+uint32_t cyan = strip.Color(0, 195, 219);   // CYAN
+uint32_t blue = strip.Color(0, 0, 255);     // BLUE
+uint32_t purple = strip.Color(110, 0, 110); // PURPLE
+uint32_t black = strip.Color(0, 0, 0);      // BLACK
+
+// Assignment  (change this!)
+uint32_t c1 = pink;
+uint32_t c2 = red;
+uint32_t c3 = orange;
+uint32_t c4 = yellow;
+uint32_t c5 = green;
+uint32_t c6 = cyan;
+uint32_t c7 = blue;
+uint32_t c8 = purple;
 
 // These are the pixels in order of animation-- 36 pixels in total:
 uint32_t colors[] = {c1, c2, c3, c4, c5, c6, c7, c8};
